@@ -6,7 +6,7 @@
 using namespace std;
 vector<int> negative(1001,0);
 vector<int> positive(1001,0);
-
+//works for both positive and negative numbers in the array
 void counting_sort(vector<int>& arr)
 {
     for(auto number:arr)
