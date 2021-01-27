@@ -44,6 +44,8 @@ public:
 	void remove(int pos);
 	int search(int element);	//returns position of the element and -1 if there is no such element
 	void print() const;
+	
+	int count(int X);
 };
 
 LinkedList::LinkedList()
@@ -219,6 +221,19 @@ int LinkedList::search(int element)
 	}
 	return -1;
 }
+
+int LinkedList::count(int X)
+{
+	Node* current = this->head;
+	int counter = 0;
+	while (current != nullptr)
+	{
+		if (current->value == X) counter++;
+		current = current->next;
+	}
+	return counter;
+}
+
 int main()
 {
 	LinkedList list;
