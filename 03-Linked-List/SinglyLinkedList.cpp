@@ -171,7 +171,7 @@ void LinkedList::remove(int position)
 	{
 		pop_front();
 	}
-	else if (position == this->size)
+	else if (position == this->size-1)
 	{
 		pop_back();
 	}
