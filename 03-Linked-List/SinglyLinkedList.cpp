@@ -248,7 +248,7 @@ int main()
 
 	list.pop_front();
 	list.pop_back();
-	list.remove(1);
+	list.remove(3);
 	list.remove(1);
 	list.remove(0);
 	list.print();
